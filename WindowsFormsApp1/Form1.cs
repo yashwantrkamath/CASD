@@ -80,7 +80,7 @@ namespace WindowsFormsApp1
 
             k1 = c13 *(0.93+c12*Math.Pow(Convert.ToDouble(tbB.Text)/Lr,0.92497)) * Math.Pow(0.95-Convert.ToDouble(tbCp.Text), -0.521448) * Math.Pow(1- Convert.ToDouble(tbCp.Text)+0.0225*Convert.ToDouble(tbLCB.Text) , 0.6906);
 
-            Cf = 0.075 /(Math.Pow( (Math.Log10(Reyno)-2),2));
+            Cf = 0.075 / (Math.Pow((Math.Log10(Reyno) - 2), 2));
 
             WettedSurfaceArea = Convert.ToDouble(tbLBP.Text)*(2*T+Convert.ToDouble(tbB.Text) ) * Math.Sqrt(Convert.ToDouble(tbCm.Text)) * (0.453+0.4425* Convert.ToDouble(tbCb.Text) ) -0.2862 * Convert.ToDouble(tbCm.Text) - 0.003467 * Convert.ToDouble(tbB.Text)/ Convert.ToDouble(T) + 0.3696* Convert.ToDouble(tbCwp.Text)+2.38* Convert.ToDouble(tbAbt.Text)/Convert.ToDouble(tbCb.Text);
 

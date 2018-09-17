@@ -93,6 +93,8 @@ namespace WindowsFormsApp1
 
             R = Rf*(k1)+Rapp+Rw+Rb+Rtr+Ra;
 
+            //tbResRa.Text = Convert.ToString(Ra);
+
 
 
         }
@@ -145,6 +147,21 @@ namespace WindowsFormsApp1
         }
 
         private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkbrudderskeg_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

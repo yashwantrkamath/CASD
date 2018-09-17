@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.Diagnostics;
 
 namespace WindowsFormsApp1
 {
@@ -20,10 +24,10 @@ namespace WindowsFormsApp1
         private void btnCALCULATE_Click(object sender, EventArgs e)
         {
             double T,Reyno=0,Lr=0,Cf,k2=0,Ca=0;
-            double c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20;
+            double c1, c2, c3, c4, c5, c6, c7=0, c8, c9, c10, c11, c12=0, c13, c14, c15, c16, c17, c18, c19, c20;
             double Rf=0, Rapp=0, Rw=0, Rb=0, Rtr=0, Ra=0,R=0,k1=0,WettedSurfaceArea=0,Fnt=0;
             T = (Convert.ToSingle(tbTAP.Text) + Convert.ToSingle(tbTFP.Text)) / 2;
-            c1 =;
+           
            
             c3 =;
             c2 = Math.Exp(-1.89*Math.Sqrt(c3));
@@ -50,7 +54,9 @@ namespace WindowsFormsApp1
             else
                if (Convert.ToDouble(tbB.Text) / Convert.ToSingle(tbLBP.Text) < 0.25)
                 c7 = 0.5 - 0.0625 * Convert.ToDouble(tbLBP.Text) / Convert.ToSingle(tbB.Text);
-            
+
+            c1 = 2223105 * Math.Pow(c7, 3.78613) * Math.Pow(T/Convert.ToDouble(tbB.Text),1.07961)*Math.Pow(90-iE);
+
 
             c8 =;
             c9 =;
@@ -72,9 +78,13 @@ namespace WindowsFormsApp1
             c18 =;
             c19 =;
             c20 =;
+
+
             Lr = Convert.ToDouble(tbLBP.Text) * ( 1-Convert.ToDouble(tbCp.Text) + 0.06 * Convert.ToDouble(tbCp.Text) * Convert.ToDouble(tbLCB.Text)) / (4*Convert.ToDouble(tbCp.Text) -1)  ;
 
             k1 = c13 *(0.93+c12*Math.Pow(Convert.ToDouble(tbB.Text)/Lr,0.92497)) * Math.Pow(0.95-Convert.ToDouble(tbCp.Text), -0.521448) * Math.Pow(1- Convert.ToDouble(tbCp.Text)+0.0225*Convert.ToDouble(tbLCB.Text) , 0.6906);
+
+            k2 =;
 
             Cf = 0.075 /(Math.Pow( (Math.Log10(Reyno)-2),2));
 
@@ -82,7 +92,7 @@ namespace WindowsFormsApp1
 
             Rapp = 0.5* 1.025* Convert.ToDouble(tbVelocity.Text)* Convert.ToDouble(tbVelocity.Text)* Convert.ToDouble(tbWettedAreaApp.Text)*Cf*k2;
 
-            Rw = c1*c2*c5* Convert.ToDouble(tbVdisp.Text) * 1.025*9.81*Math.Exp(m1*Math.Pow(Fn,0.9)+m2*Math.Cos(lamba*Math.Pow(Fn,-2)));
+            Rw = c1*c2*c5* Convert.ToDouble(tbVdisp.Text) * 1.025*9.81*Math.Exp(m1*Math.Pow(Fn,0.9)+m2*Math.Cos(lambda*Math.Pow(Fn,-2)));
 
             Rb =0.11*Math.Exp(-3*Math.Pow(Pb,-2))*Math.Pow(Fni,3)*Math.Pow(Convert.ToDouble(tbAbt.Text),1.5)*1.025*9.81/(1+Math.Pow( Fni,2)) ;
 
@@ -109,43 +119,38 @@ namespace WindowsFormsApp1
                 tbCstern.Text = Convert.ToString(10);
         }
 
-        private void tbCstern_TextChanged(object sender, EventArgs e)
+        private void btngeneratereport_Click(object sender, EventArgs e)
         {
+            string fvessel;
+            fvessel = tbVESSELID.Text;
+            Document doc = new Document(PageSize.A4,60,60,80,40);
+            PdfWriter writer = PdfWriter.GetInstance(doc,new FileStream(fvessel,FileMode.Create));
+            writer.PageEvent = new Footer();
+            doc.Open();
+            
+            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA, 14);
+            iTextSharp.text.Font font6 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14);
+            iTextSharp.text.Font font7 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA, 12);
+            iTextSharp.text.Font font8 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12);
 
-        }
+            Paragraph prgheading = new Paragraph();
+            prgheading.Alignment = Element.ALIGN_CENTER;
+            prgheading.Add(new Chunk("RESISTENCE CALCULATIONS", iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA, 28)));
+            doc.Add(prgheading);
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
+            Paragraph line = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(0.0F, 100.0F, iTextSharp.text.BaseColor.BLUE, Element.ALIGN_LEFT, 0.0F)));
+            doc.Add(line);
 
-        }
+            doc.Add(new Chunk("\n", iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA)));
 
-        private void checkBox12_CheckedChanged(object sender, EventArgs e)
-        {
+            doc.Add(new Chunk("Main Particulars", iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16)));
+            doc.Add(new Chunk("\n", iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA)));
 
-        }
+            PdfPTable t = new PdfPTable(2);
+            t.HorizontalAlignment = 0;
+            t.WidthPercentage = 45;
 
-        private void checkBox8_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label30_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
-        {
 
         }
     }

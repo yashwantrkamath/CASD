@@ -30,11 +30,38 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkbrudderskeg = new System.Windows.Forms.CheckBox();
+            this.checkbtwinscrew = new System.Windows.Forms.CheckBox();
+            this.checkbshafts = new System.Windows.Forms.CheckBox();
+            this.checkbdome = new System.Windows.Forms.CheckBox();
+            this.checkbbilgekeels = new System.Windows.Forms.CheckBox();
+            this.checkbstabilizerfin = new System.Windows.Forms.CheckBox();
+            this.checkbskeg = new System.Windows.Forms.CheckBox();
+            this.checkbhullbossing = new System.Windows.Forms.CheckBox();
+            this.checkbshaftbrackets = new System.Windows.Forms.CheckBox();
+            this.checkbrudderstern = new System.Windows.Forms.CheckBox();
+            this.checkbstrutbossing = new System.Windows.Forms.CheckBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label333 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLOAD = new System.Windows.Forms.Button();
             this.btnSAVE = new System.Windows.Forms.Button();
             this.btnCALCULATE = new System.Windows.Forms.Button();
             this.gbINPUTS = new System.Windows.Forms.GroupBox();
+            this.tbCb = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tbCp = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.cbAfterbodyForm = new System.Windows.Forms.ComboBox();
             this.tbVESSELID = new System.Windows.Forms.TextBox();
@@ -76,38 +103,13 @@
             this.tbLWL = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tbCp = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.tbCb = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label333 = new System.Windows.Forms.Label();
-            this.checkbstrutbossing = new System.Windows.Forms.CheckBox();
-            this.checkbhullbossing = new System.Windows.Forms.CheckBox();
-            this.checkbskeg = new System.Windows.Forms.CheckBox();
-            this.checkbbilgekeels = new System.Windows.Forms.CheckBox();
-            this.checkbstabilizerfin = new System.Windows.Forms.CheckBox();
-            this.checkbshafts = new System.Windows.Forms.CheckBox();
-            this.checkbdome = new System.Windows.Forms.CheckBox();
-            this.checkbrudderstern = new System.Windows.Forms.CheckBox();
-            this.checkbshaftbrackets = new System.Windows.Forms.CheckBox();
-            this.checkbtwinscrew = new System.Windows.Forms.CheckBox();
-            this.checkbrudderskeg = new System.Windows.Forms.CheckBox();
+            this.btngeneratereport = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbINPUTS.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -124,6 +126,7 @@
             // 
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.btnCALCULATE);
             this.tabPage1.Controls.Add(this.gbINPUTS);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
@@ -132,16 +135,265 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.checkbrudderskeg);
+            this.groupBox2.Controls.Add(this.checkbtwinscrew);
+            this.groupBox2.Controls.Add(this.checkbshafts);
+            this.groupBox2.Controls.Add(this.checkbdome);
+            this.groupBox2.Controls.Add(this.checkbbilgekeels);
+            this.groupBox2.Controls.Add(this.checkbstabilizerfin);
+            this.groupBox2.Controls.Add(this.checkbskeg);
+            this.groupBox2.Controls.Add(this.checkbhullbossing);
+            this.groupBox2.Controls.Add(this.checkbshaftbrackets);
+            this.groupBox2.Controls.Add(this.checkbrudderstern);
+            this.groupBox2.Controls.Add(this.checkbstrutbossing);
+            this.groupBox2.Controls.Add(this.label30);
+            this.groupBox2.Controls.Add(this.label32);
+            this.groupBox2.Controls.Add(this.label333);
+            this.groupBox2.Controls.Add(this.label24);
+            this.groupBox2.Controls.Add(this.label27);
+            this.groupBox2.Controls.Add(this.label28);
+            this.groupBox2.Controls.Add(this.label29);
+            this.groupBox2.Controls.Add(this.label26);
+            this.groupBox2.Controls.Add(this.label25);
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Location = new System.Drawing.Point(18, 450);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(898, 194);
+            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // checkbrudderskeg
+            // 
+            this.checkbrudderskeg.AutoSize = true;
+            this.checkbrudderskeg.Location = new System.Drawing.Point(286, 35);
+            this.checkbrudderskeg.Name = "checkbrudderskeg";
+            this.checkbrudderskeg.Size = new System.Drawing.Size(18, 17);
+            this.checkbrudderskeg.TabIndex = 49;
+            this.checkbrudderskeg.UseVisualStyleBackColor = true;
+            // 
+            // checkbtwinscrew
+            // 
+            this.checkbtwinscrew.AutoSize = true;
+            this.checkbtwinscrew.Location = new System.Drawing.Point(286, 150);
+            this.checkbtwinscrew.Name = "checkbtwinscrew";
+            this.checkbtwinscrew.Size = new System.Drawing.Size(18, 17);
+            this.checkbtwinscrew.TabIndex = 48;
+            this.checkbtwinscrew.UseVisualStyleBackColor = true;
+            // 
+            // checkbshafts
+            // 
+            this.checkbshafts.AutoSize = true;
+            this.checkbshafts.Location = new System.Drawing.Point(726, 73);
+            this.checkbshafts.Name = "checkbshafts";
+            this.checkbshafts.Size = new System.Drawing.Size(18, 17);
+            this.checkbshafts.TabIndex = 47;
+            this.checkbshafts.UseVisualStyleBackColor = true;
+            // 
+            // checkbdome
+            // 
+            this.checkbdome.AutoSize = true;
+            this.checkbdome.Location = new System.Drawing.Point(726, 33);
+            this.checkbdome.Name = "checkbdome";
+            this.checkbdome.Size = new System.Drawing.Size(18, 17);
+            this.checkbdome.TabIndex = 46;
+            this.checkbdome.UseVisualStyleBackColor = true;
+            // 
+            // checkbbilgekeels
+            // 
+            this.checkbbilgekeels.AutoSize = true;
+            this.checkbbilgekeels.Location = new System.Drawing.Point(726, 111);
+            this.checkbbilgekeels.Name = "checkbbilgekeels";
+            this.checkbbilgekeels.Size = new System.Drawing.Size(18, 17);
+            this.checkbbilgekeels.TabIndex = 45;
+            this.checkbbilgekeels.UseVisualStyleBackColor = true;
+            // 
+            // checkbstabilizerfin
+            // 
+            this.checkbstabilizerfin.AutoSize = true;
+            this.checkbstabilizerfin.Location = new System.Drawing.Point(510, 113);
+            this.checkbstabilizerfin.Name = "checkbstabilizerfin";
+            this.checkbstabilizerfin.Size = new System.Drawing.Size(18, 17);
+            this.checkbstabilizerfin.TabIndex = 44;
+            this.checkbstabilizerfin.UseVisualStyleBackColor = true;
+            // 
+            // checkbskeg
+            // 
+            this.checkbskeg.AutoSize = true;
+            this.checkbskeg.Location = new System.Drawing.Point(510, 150);
+            this.checkbskeg.Name = "checkbskeg";
+            this.checkbskeg.Size = new System.Drawing.Size(18, 17);
+            this.checkbskeg.TabIndex = 43;
+            this.checkbskeg.UseVisualStyleBackColor = true;
+            // 
+            // checkbhullbossing
+            // 
+            this.checkbhullbossing.AutoSize = true;
+            this.checkbhullbossing.Location = new System.Drawing.Point(510, 73);
+            this.checkbhullbossing.Name = "checkbhullbossing";
+            this.checkbhullbossing.Size = new System.Drawing.Size(18, 17);
+            this.checkbhullbossing.TabIndex = 42;
+            this.checkbhullbossing.UseVisualStyleBackColor = true;
+            // 
+            // checkbshaftbrackets
+            // 
+            this.checkbshaftbrackets.AutoSize = true;
+            this.checkbshaftbrackets.Location = new System.Drawing.Point(286, 111);
+            this.checkbshaftbrackets.Name = "checkbshaftbrackets";
+            this.checkbshaftbrackets.Size = new System.Drawing.Size(18, 17);
+            this.checkbshaftbrackets.TabIndex = 41;
+            this.checkbshaftbrackets.UseVisualStyleBackColor = true;
+            // 
+            // checkbrudderstern
+            // 
+            this.checkbrudderstern.AutoSize = true;
+            this.checkbrudderstern.Location = new System.Drawing.Point(286, 71);
+            this.checkbrudderstern.Name = "checkbrudderstern";
+            this.checkbrudderstern.Size = new System.Drawing.Size(18, 17);
+            this.checkbrudderstern.TabIndex = 40;
+            this.checkbrudderstern.UseVisualStyleBackColor = true;
+            // 
+            // checkbstrutbossing
+            // 
+            this.checkbstrutbossing.AutoSize = true;
+            this.checkbstrutbossing.Location = new System.Drawing.Point(510, 33);
+            this.checkbstrutbossing.Name = "checkbstrutbossing";
+            this.checkbstrutbossing.Size = new System.Drawing.Size(18, 17);
+            this.checkbstrutbossing.TabIndex = 39;
+            this.checkbstrutbossing.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.White;
+            this.label30.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(6, 144);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(274, 27);
+            this.label30.TabIndex = 37;
+            this.label30.Text = "twin screw balance rudders";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.White;
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(594, 67);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(68, 27);
+            this.label32.TabIndex = 35;
+            this.label32.Text = "shafts";
+            // 
+            // label333
+            // 
+            this.label333.AutoSize = true;
+            this.label333.BackColor = System.Drawing.Color.White;
+            this.label333.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label333.Location = new System.Drawing.Point(594, 27);
+            this.label333.Name = "label333";
+            this.label333.Size = new System.Drawing.Size(65, 27);
+            this.label333.TabIndex = 34;
+            this.label333.Text = "dome";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(363, 107);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(139, 27);
+            this.label24.TabIndex = 33;
+            this.label24.Text = "stabilizer fins";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.White;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(594, 105);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(113, 27);
+            this.label27.TabIndex = 32;
+            this.label27.Text = "bilge keels";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.White;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(363, 67);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(134, 27);
+            this.label28.TabIndex = 31;
+            this.label28.Text = "hull bossings";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.White;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(363, 27);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(141, 27);
+            this.label29.TabIndex = 30;
+            this.label29.Text = "strut bossings";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.White;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(6, 107);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(146, 27);
+            this.label26.TabIndex = 29;
+            this.label26.Text = "shaft brackets";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.White;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(363, 144);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(55, 27);
+            this.label25.TabIndex = 28;
+            this.label25.Text = "skeg";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.White;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(6, 67);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(199, 27);
+            this.label23.TabIndex = 26;
+            this.label23.Text = "rudder behind stern";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.White;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(6, 27);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(195, 27);
+            this.label22.TabIndex = 25;
+            this.label22.Text = "rudder behind skeg";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnLOAD);
             this.groupBox1.Controls.Add(this.btnSAVE);
-            this.groupBox1.Controls.Add(this.btnCALCULATE);
-            this.groupBox1.Location = new System.Drawing.Point(1041, 468);
+            this.groupBox1.Location = new System.Drawing.Point(1030, 544);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(622, 100);
+            this.groupBox1.Size = new System.Drawing.Size(447, 100);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -149,7 +401,7 @@
             // btnLOAD
             // 
             this.btnLOAD.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLOAD.Location = new System.Drawing.Point(435, 30);
+            this.btnLOAD.Location = new System.Drawing.Point(253, 30);
             this.btnLOAD.Name = "btnLOAD";
             this.btnLOAD.Size = new System.Drawing.Size(166, 43);
             this.btnLOAD.TabIndex = 42;
@@ -169,7 +421,7 @@
             // btnCALCULATE
             // 
             this.btnCALCULATE.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCALCULATE.Location = new System.Drawing.Point(223, 30);
+            this.btnCALCULATE.Location = new System.Drawing.Point(1046, 461);
             this.btnCALCULATE.Name = "btnCALCULATE";
             this.btnCALCULATE.Size = new System.Drawing.Size(166, 43);
             this.btnCALCULATE.TabIndex = 41;
@@ -226,10 +478,50 @@
             this.gbINPUTS.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbINPUTS.Location = new System.Drawing.Point(18, 32);
             this.gbINPUTS.Name = "gbINPUTS";
-            this.gbINPUTS.Size = new System.Drawing.Size(1634, 401);
+            this.gbINPUTS.Size = new System.Drawing.Size(1691, 401);
             this.gbINPUTS.TabIndex = 20;
             this.gbINPUTS.TabStop = false;
             this.gbINPUTS.Text = "INPUTS";
+            // 
+            // tbCb
+            // 
+            this.tbCb.BackColor = System.Drawing.Color.White;
+            this.tbCb.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCb.Location = new System.Drawing.Point(491, 342);
+            this.tbCb.Name = "tbCb";
+            this.tbCb.Size = new System.Drawing.Size(131, 34);
+            this.tbCb.TabIndex = 62;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.White;
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(337, 342);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(40, 27);
+            this.label21.TabIndex = 61;
+            this.label21.Text = "Cb";
+            // 
+            // tbCp
+            // 
+            this.tbCp.BackColor = System.Drawing.Color.White;
+            this.tbCp.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCp.Location = new System.Drawing.Point(167, 342);
+            this.tbCp.Name = "tbCp";
+            this.tbCp.Size = new System.Drawing.Size(131, 34);
+            this.tbCp.TabIndex = 60;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.White;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(20, 342);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(40, 27);
+            this.label19.TabIndex = 59;
+            this.label19.Text = "Cp";
             // 
             // label18
             // 
@@ -337,7 +629,6 @@
             this.tbCstern.Name = "tbCstern";
             this.tbCstern.Size = new System.Drawing.Size(131, 34);
             this.tbCstern.TabIndex = 51;
-            this.tbCstern.TextChanged += new System.EventHandler(this.tbCstern_TextChanged);
             // 
             // tbVdisp
             // 
@@ -638,6 +929,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btngeneratereport);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -646,302 +938,16 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tbCp
+            // btngeneratereport
             // 
-            this.tbCp.BackColor = System.Drawing.Color.White;
-            this.tbCp.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCp.Location = new System.Drawing.Point(167, 342);
-            this.tbCp.Name = "tbCp";
-            this.tbCp.Size = new System.Drawing.Size(131, 34);
-            this.tbCp.TabIndex = 60;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.White;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(20, 342);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(40, 27);
-            this.label19.TabIndex = 59;
-            this.label19.Text = "Cp";
-            // 
-            // tbCb
-            // 
-            this.tbCb.BackColor = System.Drawing.Color.White;
-            this.tbCb.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCb.Location = new System.Drawing.Point(491, 342);
-            this.tbCb.Name = "tbCb";
-            this.tbCb.Size = new System.Drawing.Size(131, 34);
-            this.tbCb.TabIndex = 62;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.White;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(337, 342);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(40, 27);
-            this.label21.TabIndex = 61;
-            this.label21.Text = "Cb";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkbrudderskeg);
-            this.groupBox2.Controls.Add(this.checkbtwinscrew);
-            this.groupBox2.Controls.Add(this.checkbshafts);
-            this.groupBox2.Controls.Add(this.checkbdome);
-            this.groupBox2.Controls.Add(this.checkbbilgekeels);
-            this.groupBox2.Controls.Add(this.checkbstabilizerfin);
-            this.groupBox2.Controls.Add(this.checkbskeg);
-            this.groupBox2.Controls.Add(this.checkbhullbossing);
-            this.groupBox2.Controls.Add(this.checkbshaftbrackets);
-            this.groupBox2.Controls.Add(this.checkbrudderstern);
-            this.groupBox2.Controls.Add(this.checkbstrutbossing);
-            this.groupBox2.Controls.Add(this.label30);
-            this.groupBox2.Controls.Add(this.label32);
-            this.groupBox2.Controls.Add(this.label333);
-            this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.label27);
-            this.groupBox2.Controls.Add(this.label28);
-            this.groupBox2.Controls.Add(this.label29);
-            this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Location = new System.Drawing.Point(18, 450);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(898, 194);
-            this.groupBox2.TabIndex = 22;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.White;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(6, 27);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(195, 27);
-            this.label22.TabIndex = 25;
-            this.label22.Text = "rudder behind skeg";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.White;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(6, 67);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(199, 27);
-            this.label23.TabIndex = 26;
-            this.label23.Text = "rudder behind stern";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.White;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(363, 144);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(55, 27);
-            this.label25.TabIndex = 28;
-            this.label25.Text = "skeg";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.White;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(6, 107);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(146, 27);
-            this.label26.TabIndex = 29;
-            this.label26.Text = "shaft brackets";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.White;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(363, 107);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(139, 27);
-            this.label24.TabIndex = 33;
-            this.label24.Text = "stabilizer fins";
-            this.label24.Click += new System.EventHandler(this.label24_Click);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.White;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(594, 105);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 27);
-            this.label27.TabIndex = 32;
-            this.label27.Text = "bilge keels";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.White;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(363, 67);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(134, 27);
-            this.label28.TabIndex = 31;
-            this.label28.Text = "hull bossings";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.White;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(363, 27);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(141, 27);
-            this.label29.TabIndex = 30;
-            this.label29.Text = "strut bossings";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.White;
-            this.label30.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(6, 144);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(274, 27);
-            this.label30.TabIndex = 37;
-            this.label30.Text = "twin screw balance rudders";
-            this.label30.Click += new System.EventHandler(this.label30_Click);
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.White;
-            this.label32.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(594, 67);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(68, 27);
-            this.label32.TabIndex = 35;
-            this.label32.Text = "shafts";
-            // 
-            // label333
-            // 
-            this.label333.AutoSize = true;
-            this.label333.BackColor = System.Drawing.Color.White;
-            this.label333.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label333.Location = new System.Drawing.Point(594, 27);
-            this.label333.Name = "label333";
-            this.label333.Size = new System.Drawing.Size(65, 27);
-            this.label333.TabIndex = 34;
-            this.label333.Text = "dome";
-            // 
-            // checkbstrutbossing
-            // 
-            this.checkbstrutbossing.AutoSize = true;
-            this.checkbstrutbossing.Location = new System.Drawing.Point(510, 33);
-            this.checkbstrutbossing.Name = "checkbstrutbossing";
-            this.checkbstrutbossing.Size = new System.Drawing.Size(18, 17);
-            this.checkbstrutbossing.TabIndex = 39;
-            this.checkbstrutbossing.UseVisualStyleBackColor = true;
-            // 
-            // checkbhullbossing
-            // 
-            this.checkbhullbossing.AutoSize = true;
-            this.checkbhullbossing.Location = new System.Drawing.Point(510, 73);
-            this.checkbhullbossing.Name = "checkbhullbossing";
-            this.checkbhullbossing.Size = new System.Drawing.Size(18, 17);
-            this.checkbhullbossing.TabIndex = 42;
-            this.checkbhullbossing.UseVisualStyleBackColor = true;
-            // 
-            // checkbskeg
-            // 
-            this.checkbskeg.AutoSize = true;
-            this.checkbskeg.Location = new System.Drawing.Point(510, 150);
-            this.checkbskeg.Name = "checkbskeg";
-            this.checkbskeg.Size = new System.Drawing.Size(18, 17);
-            this.checkbskeg.TabIndex = 43;
-            this.checkbskeg.UseVisualStyleBackColor = true;
-            // 
-            // checkbbilgekeels
-            // 
-            this.checkbbilgekeels.AutoSize = true;
-            this.checkbbilgekeels.Location = new System.Drawing.Point(726, 111);
-            this.checkbbilgekeels.Name = "checkbbilgekeels";
-            this.checkbbilgekeels.Size = new System.Drawing.Size(18, 17);
-            this.checkbbilgekeels.TabIndex = 45;
-            this.checkbbilgekeels.UseVisualStyleBackColor = true;
-            // 
-            // checkbstabilizerfin
-            // 
-            this.checkbstabilizerfin.AutoSize = true;
-            this.checkbstabilizerfin.Location = new System.Drawing.Point(510, 113);
-            this.checkbstabilizerfin.Name = "checkbstabilizerfin";
-            this.checkbstabilizerfin.Size = new System.Drawing.Size(18, 17);
-            this.checkbstabilizerfin.TabIndex = 44;
-            this.checkbstabilizerfin.UseVisualStyleBackColor = true;
-            this.checkbstabilizerfin.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
-            // 
-            // checkbshafts
-            // 
-            this.checkbshafts.AutoSize = true;
-            this.checkbshafts.Location = new System.Drawing.Point(726, 73);
-            this.checkbshafts.Name = "checkbshafts";
-            this.checkbshafts.Size = new System.Drawing.Size(18, 17);
-            this.checkbshafts.TabIndex = 47;
-            this.checkbshafts.UseVisualStyleBackColor = true;
-            // 
-            // checkbdome
-            // 
-            this.checkbdome.AutoSize = true;
-            this.checkbdome.Location = new System.Drawing.Point(726, 33);
-            this.checkbdome.Name = "checkbdome";
-            this.checkbdome.Size = new System.Drawing.Size(18, 17);
-            this.checkbdome.TabIndex = 46;
-            this.checkbdome.UseVisualStyleBackColor = true;
-            // 
-            // checkbrudderstern
-            // 
-            this.checkbrudderstern.AutoSize = true;
-            this.checkbrudderstern.Location = new System.Drawing.Point(286, 71);
-            this.checkbrudderstern.Name = "checkbrudderstern";
-            this.checkbrudderstern.Size = new System.Drawing.Size(18, 17);
-            this.checkbrudderstern.TabIndex = 40;
-            this.checkbrudderstern.UseVisualStyleBackColor = true;
-            // 
-            // checkbshaftbrackets
-            // 
-            this.checkbshaftbrackets.AutoSize = true;
-            this.checkbshaftbrackets.Location = new System.Drawing.Point(286, 111);
-            this.checkbshaftbrackets.Name = "checkbshaftbrackets";
-            this.checkbshaftbrackets.Size = new System.Drawing.Size(18, 17);
-            this.checkbshaftbrackets.TabIndex = 41;
-            this.checkbshaftbrackets.UseVisualStyleBackColor = true;
-            this.checkbshaftbrackets.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
-            // 
-            // checkbtwinscrew
-            // 
-            this.checkbtwinscrew.AutoSize = true;
-            this.checkbtwinscrew.Location = new System.Drawing.Point(286, 150);
-            this.checkbtwinscrew.Name = "checkbtwinscrew";
-            this.checkbtwinscrew.Size = new System.Drawing.Size(18, 17);
-            this.checkbtwinscrew.TabIndex = 48;
-            this.checkbtwinscrew.UseVisualStyleBackColor = true;
-            this.checkbtwinscrew.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
-            // 
-            // checkbrudderskeg
-            // 
-            this.checkbrudderskeg.AutoSize = true;
-            this.checkbrudderskeg.Location = new System.Drawing.Point(286, 35);
-            this.checkbrudderskeg.Name = "checkbrudderskeg";
-            this.checkbrudderskeg.Size = new System.Drawing.Size(18, 17);
-            this.checkbrudderskeg.TabIndex = 49;
-            this.checkbrudderskeg.UseVisualStyleBackColor = true;
+            this.btngeneratereport.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngeneratereport.Location = new System.Drawing.Point(848, 124);
+            this.btngeneratereport.Name = "btngeneratereport";
+            this.btngeneratereport.Size = new System.Drawing.Size(189, 43);
+            this.btngeneratereport.TabIndex = 42;
+            this.btngeneratereport.Text = "Generate Report";
+            this.btngeneratereport.UseVisualStyleBackColor = true;
+            this.btngeneratereport.Click += new System.EventHandler(this.btngeneratereport_Click);
             // 
             // Form1
             // 
@@ -954,11 +960,12 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.gbINPUTS.ResumeLayout(false);
             this.gbINPUTS.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1040,6 +1047,7 @@
         private System.Windows.Forms.CheckBox checkbtwinscrew;
         private System.Windows.Forms.CheckBox checkbshaftbrackets;
         private System.Windows.Forms.CheckBox checkbrudderstern;
+        private System.Windows.Forms.Button btngeneratereport;
     }
 }
 

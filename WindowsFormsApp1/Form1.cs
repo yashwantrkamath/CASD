@@ -23,9 +23,12 @@ namespace WindowsFormsApp1
             double c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20;
             double Rf=0, Rapp=0, Rw=0, Rb=0, Rtr=0, Ra=0,R=0,k1=0,WettedSurfaceArea=0,Fnt=0;
             T = (Convert.ToSingle(tbTAP.Text) + Convert.ToSingle(tbTFP.Text)) / 2;
-            c1 =;
+
+            c7 = 0;
+            double ie = 0;
+            
            
-            c3 =;
+            c3 =0;
             c2 = Math.Exp(-1.89*Math.Sqrt(c3));
             if (Convert.ToDouble(tbTFP.Text)/Convert.ToDouble(tbLBP.Text) <= 0.04)
                 c4 = Convert.ToDouble(tbTFP.Text)/Convert.ToDouble(tbLBP.Text);
@@ -50,12 +53,13 @@ namespace WindowsFormsApp1
             else
                if (Convert.ToDouble(tbB.Text) / Convert.ToSingle(tbLBP.Text) < 0.25)
                 c7 = 0.5 - 0.0625 * Convert.ToDouble(tbLBP.Text) / Convert.ToSingle(tbB.Text);
-            
 
-            c8 =;
-            c9 =;
-            c10 =;
-            c11 =;
+            c1 =2223105*Math.Pow(c7,3.78613)*Math.Pow((T/Convert.ToDouble(tbB)),1.07961)*Math.Pow((90-ie),-1.37565);
+            c8 =0;
+            c9 =0;
+            c10 =0;
+            c11 =0;
+            c12 = 0;
             if (T / Convert.ToSingle(tbLBP.Text) > 0.05)
                 c12 = Math.Pow(  (T/Convert.ToDouble(tbLBP.Text)) ,0.2228446);
             else
@@ -65,13 +69,13 @@ namespace WindowsFormsApp1
                 if (T / Convert.ToSingle(tbLBP.Text) < 0.02)
                 c12 =0.479948;
             c13 =1+0.003*Convert.ToSingle(tbCstern.Text);
-            c14 =;
-            c15 =;
-            c16 =;
-            c17 =;
-            c18 =;
-            c19 =;
-            c20 =;
+            c14 =0;
+            c15 =0;
+            c16 =0;
+            c17 =0;
+            c18 =0;
+            c19 =0;
+            c20 =0;
             Lr = Convert.ToDouble(tbLBP.Text) * ( 1-Convert.ToDouble(tbCp.Text) + 0.06 * Convert.ToDouble(tbCp.Text) * Convert.ToDouble(tbLCB.Text)) / (4*Convert.ToDouble(tbCp.Text) -1)  ;
 
             k1 = c13 *(0.93+c12*Math.Pow(Convert.ToDouble(tbB.Text)/Lr,0.92497)) * Math.Pow(0.95-Convert.ToDouble(tbCp.Text), -0.521448) * Math.Pow(1- Convert.ToDouble(tbCp.Text)+0.0225*Convert.ToDouble(tbLCB.Text) , 0.6906);
@@ -164,6 +168,19 @@ namespace WindowsFormsApp1
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkbie.Checked)
+            { tbie.Visible = false; }
+            else
+            { tbie.Visible = true; }
         }
     }
 }

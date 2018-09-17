@@ -58,6 +58,8 @@
             this.btnSAVE = new System.Windows.Forms.Button();
             this.btnCALCULATE = new System.Windows.Forms.Button();
             this.gbINPUTS = new System.Windows.Forms.GroupBox();
+            this.tbie = new System.Windows.Forms.TextBox();
+            this.checkbie = new System.Windows.Forms.CheckBox();
             this.tbCb = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.tbCp = new System.Windows.Forms.TextBox();
@@ -115,7 +117,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(24, 23);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(6);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(3640, 1618);
@@ -127,9 +129,9 @@
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.gbINPUTS);
             this.tabPage1.Location = new System.Drawing.Point(10, 48);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(6);
             this.tabPage1.Size = new System.Drawing.Size(3620, 1560);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
@@ -161,9 +163,9 @@
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Location = new System.Drawing.Point(36, 872);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox2.Size = new System.Drawing.Size(1796, 376);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
@@ -173,7 +175,7 @@
             // 
             this.checkbrudderskeg.AutoSize = true;
             this.checkbrudderskeg.Location = new System.Drawing.Point(572, 68);
-            this.checkbrudderskeg.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbrudderskeg.Margin = new System.Windows.Forms.Padding(6);
             this.checkbrudderskeg.Name = "checkbrudderskeg";
             this.checkbrudderskeg.Size = new System.Drawing.Size(34, 33);
             this.checkbrudderskeg.TabIndex = 49;
@@ -184,7 +186,7 @@
             // 
             this.checkbtwinscrew.AutoSize = true;
             this.checkbtwinscrew.Location = new System.Drawing.Point(572, 291);
-            this.checkbtwinscrew.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbtwinscrew.Margin = new System.Windows.Forms.Padding(6);
             this.checkbtwinscrew.Name = "checkbtwinscrew";
             this.checkbtwinscrew.Size = new System.Drawing.Size(34, 33);
             this.checkbtwinscrew.TabIndex = 48;
@@ -195,7 +197,7 @@
             // 
             this.checkbshafts.AutoSize = true;
             this.checkbshafts.Location = new System.Drawing.Point(1452, 141);
-            this.checkbshafts.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbshafts.Margin = new System.Windows.Forms.Padding(6);
             this.checkbshafts.Name = "checkbshafts";
             this.checkbshafts.Size = new System.Drawing.Size(34, 33);
             this.checkbshafts.TabIndex = 47;
@@ -205,7 +207,7 @@
             // 
             this.checkbdome.AutoSize = true;
             this.checkbdome.Location = new System.Drawing.Point(1452, 64);
-            this.checkbdome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbdome.Margin = new System.Windows.Forms.Padding(6);
             this.checkbdome.Name = "checkbdome";
             this.checkbdome.Size = new System.Drawing.Size(34, 33);
             this.checkbdome.TabIndex = 46;
@@ -215,7 +217,7 @@
             // 
             this.checkbbilgekeels.AutoSize = true;
             this.checkbbilgekeels.Location = new System.Drawing.Point(1452, 215);
-            this.checkbbilgekeels.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbbilgekeels.Margin = new System.Windows.Forms.Padding(6);
             this.checkbbilgekeels.Name = "checkbbilgekeels";
             this.checkbbilgekeels.Size = new System.Drawing.Size(34, 33);
             this.checkbbilgekeels.TabIndex = 45;
@@ -225,7 +227,7 @@
             // 
             this.checkbstabilizerfin.AutoSize = true;
             this.checkbstabilizerfin.Location = new System.Drawing.Point(1020, 219);
-            this.checkbstabilizerfin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbstabilizerfin.Margin = new System.Windows.Forms.Padding(6);
             this.checkbstabilizerfin.Name = "checkbstabilizerfin";
             this.checkbstabilizerfin.Size = new System.Drawing.Size(34, 33);
             this.checkbstabilizerfin.TabIndex = 44;
@@ -236,7 +238,7 @@
             // 
             this.checkbskeg.AutoSize = true;
             this.checkbskeg.Location = new System.Drawing.Point(1020, 291);
-            this.checkbskeg.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbskeg.Margin = new System.Windows.Forms.Padding(6);
             this.checkbskeg.Name = "checkbskeg";
             this.checkbskeg.Size = new System.Drawing.Size(34, 33);
             this.checkbskeg.TabIndex = 43;
@@ -246,7 +248,7 @@
             // 
             this.checkbhullbossing.AutoSize = true;
             this.checkbhullbossing.Location = new System.Drawing.Point(1020, 141);
-            this.checkbhullbossing.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbhullbossing.Margin = new System.Windows.Forms.Padding(6);
             this.checkbhullbossing.Name = "checkbhullbossing";
             this.checkbhullbossing.Size = new System.Drawing.Size(34, 33);
             this.checkbhullbossing.TabIndex = 42;
@@ -256,7 +258,7 @@
             // 
             this.checkbshaftbrackets.AutoSize = true;
             this.checkbshaftbrackets.Location = new System.Drawing.Point(572, 215);
-            this.checkbshaftbrackets.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbshaftbrackets.Margin = new System.Windows.Forms.Padding(6);
             this.checkbshaftbrackets.Name = "checkbshaftbrackets";
             this.checkbshaftbrackets.Size = new System.Drawing.Size(34, 33);
             this.checkbshaftbrackets.TabIndex = 41;
@@ -267,7 +269,7 @@
             // 
             this.checkbrudderstern.AutoSize = true;
             this.checkbrudderstern.Location = new System.Drawing.Point(572, 138);
-            this.checkbrudderstern.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbrudderstern.Margin = new System.Windows.Forms.Padding(6);
             this.checkbrudderstern.Name = "checkbrudderstern";
             this.checkbrudderstern.Size = new System.Drawing.Size(34, 33);
             this.checkbrudderstern.TabIndex = 40;
@@ -277,7 +279,7 @@
             // 
             this.checkbstrutbossing.AutoSize = true;
             this.checkbstrutbossing.Location = new System.Drawing.Point(1020, 64);
-            this.checkbstrutbossing.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkbstrutbossing.Margin = new System.Windows.Forms.Padding(6);
             this.checkbstrutbossing.Name = "checkbstrutbossing";
             this.checkbstrutbossing.Size = new System.Drawing.Size(34, 33);
             this.checkbstrutbossing.TabIndex = 39;
@@ -424,9 +426,9 @@
             this.groupBox1.Controls.Add(this.btnSAVE);
             this.groupBox1.Controls.Add(this.btnCALCULATE);
             this.groupBox1.Location = new System.Drawing.Point(2082, 907);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(1244, 194);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
@@ -436,7 +438,7 @@
             // 
             this.btnLOAD.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLOAD.Location = new System.Drawing.Point(870, 58);
-            this.btnLOAD.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLOAD.Margin = new System.Windows.Forms.Padding(6);
             this.btnLOAD.Name = "btnLOAD";
             this.btnLOAD.Size = new System.Drawing.Size(332, 83);
             this.btnLOAD.TabIndex = 42;
@@ -447,7 +449,7 @@
             // 
             this.btnSAVE.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSAVE.Location = new System.Drawing.Point(32, 58);
-            this.btnSAVE.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnSAVE.Margin = new System.Windows.Forms.Padding(6);
             this.btnSAVE.Name = "btnSAVE";
             this.btnSAVE.Size = new System.Drawing.Size(332, 83);
             this.btnSAVE.TabIndex = 40;
@@ -458,7 +460,7 @@
             // 
             this.btnCALCULATE.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCALCULATE.Location = new System.Drawing.Point(446, 58);
-            this.btnCALCULATE.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCALCULATE.Margin = new System.Windows.Forms.Padding(6);
             this.btnCALCULATE.Name = "btnCALCULATE";
             this.btnCALCULATE.Size = new System.Drawing.Size(332, 83);
             this.btnCALCULATE.TabIndex = 41;
@@ -468,6 +470,8 @@
             // 
             // gbINPUTS
             // 
+            this.gbINPUTS.Controls.Add(this.tbie);
+            this.gbINPUTS.Controls.Add(this.checkbie);
             this.gbINPUTS.Controls.Add(this.tbCb);
             this.gbINPUTS.Controls.Add(this.label21);
             this.gbINPUTS.Controls.Add(this.tbCp);
@@ -514,20 +518,41 @@
             this.gbINPUTS.Controls.Add(this.label10);
             this.gbINPUTS.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbINPUTS.Location = new System.Drawing.Point(36, 62);
-            this.gbINPUTS.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gbINPUTS.Margin = new System.Windows.Forms.Padding(6);
             this.gbINPUTS.Name = "gbINPUTS";
-            this.gbINPUTS.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gbINPUTS.Padding = new System.Windows.Forms.Padding(6);
             this.gbINPUTS.Size = new System.Drawing.Size(3268, 777);
             this.gbINPUTS.TabIndex = 20;
             this.gbINPUTS.TabStop = false;
             this.gbINPUTS.Text = "INPUTS";
+            // 
+            // tbie
+            // 
+            this.tbie.BackColor = System.Drawing.Color.White;
+            this.tbie.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbie.Location = new System.Drawing.Point(2852, 557);
+            this.tbie.Margin = new System.Windows.Forms.Padding(6);
+            this.tbie.Name = "tbie";
+            this.tbie.Size = new System.Drawing.Size(258, 60);
+            this.tbie.TabIndex = 64;
+            // 
+            // checkbie
+            // 
+            this.checkbie.AutoSize = true;
+            this.checkbie.Location = new System.Drawing.Point(2309, 560);
+            this.checkbie.Name = "checkbie";
+            this.checkbie.Size = new System.Drawing.Size(494, 57);
+            this.checkbie.TabIndex = 63;
+            this.checkbie.Text = "Half Angle of Entrance";
+            this.checkbie.UseVisualStyleBackColor = true;
+            this.checkbie.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // tbCb
             // 
             this.tbCb.BackColor = System.Drawing.Color.White;
             this.tbCb.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCb.Location = new System.Drawing.Point(982, 663);
-            this.tbCb.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCb.Margin = new System.Windows.Forms.Padding(6);
             this.tbCb.Name = "tbCb";
             this.tbCb.Size = new System.Drawing.Size(258, 60);
             this.tbCb.TabIndex = 62;
@@ -551,7 +576,7 @@
             this.tbCp.BackColor = System.Drawing.Color.White;
             this.tbCp.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCp.Location = new System.Drawing.Point(334, 663);
-            this.tbCp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCp.Margin = new System.Windows.Forms.Padding(6);
             this.tbCp.Name = "tbCp";
             this.tbCp.Size = new System.Drawing.Size(258, 60);
             this.tbCp.TabIndex = 60;
@@ -573,7 +598,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.White;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(2212, 267);
+            this.label18.Location = new System.Drawing.Point(2439, 267);
             this.label18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(330, 53);
@@ -588,7 +613,7 @@
             "Normal section ",
             "U-shaped sections"});
             this.cbAfterbodyForm.Location = new System.Drawing.Point(2852, 262);
-            this.cbAfterbodyForm.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cbAfterbodyForm.Margin = new System.Windows.Forms.Padding(6);
             this.cbAfterbodyForm.Name = "cbAfterbodyForm";
             this.cbAfterbodyForm.Size = new System.Drawing.Size(350, 61);
             this.cbAfterbodyForm.TabIndex = 57;
@@ -599,7 +624,7 @@
             this.tbVESSELID.BackColor = System.Drawing.Color.White;
             this.tbVESSELID.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVESSELID.Location = new System.Drawing.Point(334, 72);
-            this.tbVESSELID.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbVESSELID.Margin = new System.Windows.Forms.Padding(6);
             this.tbVESSELID.Name = "tbVESSELID";
             this.tbVESSELID.Size = new System.Drawing.Size(586, 60);
             this.tbVESSELID.TabIndex = 56;
@@ -621,7 +646,7 @@
             this.tbpropellerclearance.BackColor = System.Drawing.Color.White;
             this.tbpropellerclearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbpropellerclearance.Location = new System.Drawing.Point(1844, 459);
-            this.tbpropellerclearance.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbpropellerclearance.Margin = new System.Windows.Forms.Padding(6);
             this.tbpropellerclearance.Name = "tbpropellerclearance";
             this.tbpropellerclearance.Size = new System.Drawing.Size(258, 60);
             this.tbpropellerclearance.TabIndex = 52;
@@ -631,7 +656,7 @@
             this.tbWettedAreaApp.BackColor = System.Drawing.Color.White;
             this.tbWettedAreaApp.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbWettedAreaApp.Location = new System.Drawing.Point(2852, 459);
-            this.tbWettedAreaApp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbWettedAreaApp.Margin = new System.Windows.Forms.Padding(6);
             this.tbWettedAreaApp.Name = "tbWettedAreaApp";
             this.tbWettedAreaApp.Size = new System.Drawing.Size(258, 60);
             this.tbWettedAreaApp.TabIndex = 53;
@@ -641,7 +666,7 @@
             this.tbTransomArea.BackColor = System.Drawing.Color.White;
             this.tbTransomArea.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTransomArea.Location = new System.Drawing.Point(1844, 560);
-            this.tbTransomArea.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbTransomArea.Margin = new System.Windows.Forms.Padding(6);
             this.tbTransomArea.Name = "tbTransomArea";
             this.tbTransomArea.Size = new System.Drawing.Size(258, 60);
             this.tbTransomArea.TabIndex = 54;
@@ -651,7 +676,7 @@
             this.tbCwp.BackColor = System.Drawing.Color.White;
             this.tbCwp.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCwp.Location = new System.Drawing.Point(1844, 155);
-            this.tbCwp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCwp.Margin = new System.Windows.Forms.Padding(6);
             this.tbCwp.Name = "tbCwp";
             this.tbCwp.Size = new System.Drawing.Size(258, 60);
             this.tbCwp.TabIndex = 48;
@@ -661,7 +686,7 @@
             this.tbVelocity.BackColor = System.Drawing.Color.White;
             this.tbVelocity.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVelocity.Location = new System.Drawing.Point(1844, 362);
-            this.tbVelocity.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbVelocity.Margin = new System.Windows.Forms.Padding(6);
             this.tbVelocity.Name = "tbVelocity";
             this.tbVelocity.Size = new System.Drawing.Size(258, 60);
             this.tbVelocity.TabIndex = 49;
@@ -671,7 +696,7 @@
             this.tbZ.BackColor = System.Drawing.Color.White;
             this.tbZ.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbZ.Location = new System.Drawing.Point(1844, 256);
-            this.tbZ.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbZ.Margin = new System.Windows.Forms.Padding(6);
             this.tbZ.Name = "tbZ";
             this.tbZ.Size = new System.Drawing.Size(258, 60);
             this.tbZ.TabIndex = 50;
@@ -681,7 +706,7 @@
             this.tbCstern.BackColor = System.Drawing.Color.White;
             this.tbCstern.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCstern.Location = new System.Drawing.Point(2852, 353);
-            this.tbCstern.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCstern.Margin = new System.Windows.Forms.Padding(6);
             this.tbCstern.Name = "tbCstern";
             this.tbCstern.Size = new System.Drawing.Size(258, 60);
             this.tbCstern.TabIndex = 51;
@@ -692,7 +717,7 @@
             this.tbVdisp.BackColor = System.Drawing.Color.White;
             this.tbVdisp.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVdisp.Location = new System.Drawing.Point(982, 155);
-            this.tbVdisp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbVdisp.Margin = new System.Windows.Forms.Padding(6);
             this.tbVdisp.Name = "tbVdisp";
             this.tbVdisp.Size = new System.Drawing.Size(258, 60);
             this.tbVdisp.TabIndex = 43;
@@ -702,7 +727,7 @@
             this.tbD.BackColor = System.Drawing.Color.White;
             this.tbD.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbD.Location = new System.Drawing.Point(982, 570);
-            this.tbD.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbD.Margin = new System.Windows.Forms.Padding(6);
             this.tbD.Name = "tbD";
             this.tbD.Size = new System.Drawing.Size(258, 60);
             this.tbD.TabIndex = 44;
@@ -712,7 +737,7 @@
             this.tbCm.BackColor = System.Drawing.Color.White;
             this.tbCm.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCm.Location = new System.Drawing.Point(982, 459);
-            this.tbCm.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCm.Margin = new System.Windows.Forms.Padding(6);
             this.tbCm.Name = "tbCm";
             this.tbCm.Size = new System.Drawing.Size(258, 60);
             this.tbCm.TabIndex = 45;
@@ -722,7 +747,7 @@
             this.tbAbt.BackColor = System.Drawing.Color.White;
             this.tbAbt.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAbt.Location = new System.Drawing.Point(982, 353);
-            this.tbAbt.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbAbt.Margin = new System.Windows.Forms.Padding(6);
             this.tbAbt.Name = "tbAbt";
             this.tbAbt.Size = new System.Drawing.Size(258, 60);
             this.tbAbt.TabIndex = 46;
@@ -732,7 +757,7 @@
             this.tbLCB.BackColor = System.Drawing.Color.White;
             this.tbLCB.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLCB.Location = new System.Drawing.Point(982, 256);
-            this.tbLCB.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbLCB.Margin = new System.Windows.Forms.Padding(6);
             this.tbLCB.Name = "tbLCB";
             this.tbLCB.Size = new System.Drawing.Size(258, 60);
             this.tbLCB.TabIndex = 47;
@@ -742,7 +767,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.White;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1374, 368);
+            this.label16.Location = new System.Drawing.Point(1603, 368);
             this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(175, 53);
@@ -754,7 +779,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.White;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1374, 465);
+            this.label17.Location = new System.Drawing.Point(1396, 466);
             this.label17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(382, 53);
@@ -767,7 +792,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.White;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1374, 262);
+            this.label20.Location = new System.Drawing.Point(1726, 262);
             this.label20.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(52, 53);
@@ -779,7 +804,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1374, 566);
+            this.label11.Location = new System.Drawing.Point(1488, 566);
             this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(290, 53);
@@ -791,7 +816,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(2218, 465);
+            this.label12.Location = new System.Drawing.Point(2366, 459);
             this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(437, 53);
@@ -803,7 +828,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(2218, 358);
+            this.label13.Location = new System.Drawing.Point(2612, 358);
             this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(157, 53);
@@ -829,7 +854,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.White;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1374, 161);
+            this.label15.Location = new System.Drawing.Point(1666, 161);
             this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(112, 53);
@@ -853,7 +878,7 @@
             this.tbLBP.BackColor = System.Drawing.Color.White;
             this.tbLBP.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLBP.Location = new System.Drawing.Point(334, 155);
-            this.tbLBP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbLBP.Margin = new System.Windows.Forms.Padding(6);
             this.tbLBP.Name = "tbLBP";
             this.tbLBP.Size = new System.Drawing.Size(258, 60);
             this.tbLBP.TabIndex = 1;
@@ -889,7 +914,7 @@
             this.tbTFP.BackColor = System.Drawing.Color.White;
             this.tbTFP.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTFP.Location = new System.Drawing.Point(334, 570);
-            this.tbTFP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbTFP.Margin = new System.Windows.Forms.Padding(6);
             this.tbTFP.Name = "tbTFP";
             this.tbTFP.Size = new System.Drawing.Size(258, 60);
             this.tbTFP.TabIndex = 3;
@@ -925,7 +950,7 @@
             this.textBox8.BackColor = System.Drawing.Color.White;
             this.textBox8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(2852, 153);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(6);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(350, 60);
             this.textBox8.TabIndex = 15;
@@ -935,7 +960,7 @@
             this.tbTAP.BackColor = System.Drawing.Color.White;
             this.tbTAP.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTAP.Location = new System.Drawing.Point(334, 459);
-            this.tbTAP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbTAP.Margin = new System.Windows.Forms.Padding(6);
             this.tbTAP.Name = "tbTAP";
             this.tbTAP.Size = new System.Drawing.Size(258, 60);
             this.tbTAP.TabIndex = 5;
@@ -970,10 +995,11 @@
             this.tbB.BackColor = System.Drawing.Color.White;
             this.tbB.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbB.Location = new System.Drawing.Point(334, 353);
-            this.tbB.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbB.Margin = new System.Windows.Forms.Padding(6);
             this.tbB.Name = "tbB";
             this.tbB.Size = new System.Drawing.Size(258, 60);
             this.tbB.TabIndex = 7;
+            this.tbB.TextChanged += new System.EventHandler(this.tbB_TextChanged);
             // 
             // label9
             // 
@@ -1006,7 +1032,7 @@
             this.tbLWL.BackColor = System.Drawing.Color.White;
             this.tbLWL.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLWL.Location = new System.Drawing.Point(334, 256);
-            this.tbLWL.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbLWL.Margin = new System.Windows.Forms.Padding(6);
             this.tbLWL.Name = "tbLWL";
             this.tbLWL.Size = new System.Drawing.Size(258, 60);
             this.tbLWL.TabIndex = 9;
@@ -1028,9 +1054,9 @@
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(10, 48);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(6);
             this.tabPage2.Size = new System.Drawing.Size(3620, 1560);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
@@ -1042,7 +1068,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(3666, 1478);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1134,6 +1160,8 @@
         private System.Windows.Forms.CheckBox checkbtwinscrew;
         private System.Windows.Forms.CheckBox checkbshaftbrackets;
         private System.Windows.Forms.CheckBox checkbrudderstern;
+        private System.Windows.Forms.CheckBox checkbie;
+        private System.Windows.Forms.TextBox tbie;
     }
 }
 
